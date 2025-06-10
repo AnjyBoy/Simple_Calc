@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2 class="fs-1 fw-500 text-center">Simple Calculator</h2>
+    <div class="mx-auto bg-light" style="width: 20%; height: 40vh; margin-top: 30px; border: 1px solid grey;">
+        <div id="answer" style="overflow-x: hidden; width: 100%; height: 30%; border: 1px solid grey; border-right: none; border-left: none; border-top: none; align-items: flex-end; justify-content: flex-end; " class="bg-white d-flex fs-2 fw-medium pe-4 pb-3"></div>
+        <div class="col-12 row mt-3">
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-center align-items-center">AC</div>
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-center align-items-center">C</div>
+            <div class="col-3 fs-3 d-flex justify-content-lg-end align-items-center" style="cursor: pointer;">
+                <i id="exponential" onclick="exponential();" class="fa-solid fa-superscript"></i>
+            </div>
+            <div id="MOD" onclick="mod();" class="col-3 fs-3 fw-medium d-flex justify-content-lg-end align-items-center" style="cursor: pointer;">MOD</div>
+        </div>
+        <div class="col-12 row mt-5 ps-3">
+            <div class="col-6 ">
+                <input id="firstInput" type="number" style="height: 50px; width: 215px; padding-top: 10px;" class="fs-5" placeholder="Enter First Number">
+            </div>
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-end align-items-center" style="cursor: pointer;">
+                <i id="divide" onclick="quotient();" class="fa-solid fa-divide"></i>
+            </div>
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-center align-items-center" style="cursor: pointer;">
+                <i id="multiply" onclick="multiply();" class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="col-12 row mt-4 ps-3">
+            <div class="col-6 ">
+                <input id="secondInput" type="number" style="height: 50px; width: 215px; padding-top: 10px;" class="fs-5" placeholder="Enter Second Number">
+            </div>
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-end align-items-center" style="cursor: pointer;">
+                <i id="minus" onclick="subtraction();" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="col-3 fs-3 fw-medium d-flex justify-content-lg-center align-items-center" style="cursor: pointer;">
+                <i id="add" onclick="add();" class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f8926746a5.js" crossorigin="anonymous"></script>
+</html>
